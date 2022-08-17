@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h1 class="text-5xl text-center mb-5">JavaScript Calculator</h1>
+      <div class="bg-red-400 p-5 flex justify-around">
+        <div>
+          <label class="mr-3" for="">Number: 1</label>
+          <input id="num1" type="number" id="num1" class="px-4" />
+        </div>
+        <div>
+          <label class="mr-3" for="">Number: 2</label>
+          <input id="num2" type="number" id="num2" class="px-4"/>
+        </div>
+      </div>
+      <div class="flex justify-around py-4 border-2 bg-slate-200">
+        <div><Button id="add" class="bg-lime-200 py-2 px-5 rounded-2xl">Addition</Button></div>
+        <div><Button id="sub" class="bg-red-400 py-2 px-5 rounded-2xl">Subtract</Button></div>
+        <div><Button id="multi" class="bg-yellow-200 py-2 px-5 rounded-2xl">Multiply</Button></div>
+        <div><Button id="division" class="bg-orange-200 py-2 px-5 rounded-2xl">Division</Button></div>
+      </div>
+      <div>
+        <p class="text-center py-5 text-3xl bg-orange-100 text-gray-700">The Result is: 
+            <span id="result">00</span></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
